@@ -7,6 +7,6 @@ RUN go build -o web .
 FROM alpine:latest
 WORKDIR /app
 COPY --from=build /build/web .
-EXPOSE 8080
+EXPOSE 5000
 CMD ["/app/web"]
 
